@@ -1,0 +1,15 @@
+<div class="chat-wrapper">
+  <div class="chat-window">
+    <mat-card *ngFor="let message of messages">
+      <mat-card-title>{{message.username}}</mat-card-title>
+      <mat-card-content>{{message.content}}</mat-card-content>
+    </mat-card>
+  </div>
+
+  <form name="chat" class="example-form">
+    <mat-form-field class="example-full-width">
+      <textarea name="text" matInput [(ngModel)]="textMessage" placeholder="Type text"></textarea>
+    </mat-form-field>
+    <button mat-button (click)="sendMessage()" [disabled]="sendingMessageStatus">Send message</button>
+  </form>
+</div>

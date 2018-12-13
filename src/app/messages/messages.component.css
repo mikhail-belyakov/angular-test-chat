@@ -1,0 +1,31 @@
+.chat-wrapper {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.chat-window {
+  margin: 0 0 50px;
+}
+
+.chat-wrapper mat-card {
+  background-color: #eee;
+  margin: 20px;
+}
+
+
+mat-card:nth-child(odd) {
+  text-align: left;
+}
+mat-card:nth-child(even) {
+  text-align: right;
+}
+
+form {
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+form mat-form-field {
+  width: 100%;
+}
